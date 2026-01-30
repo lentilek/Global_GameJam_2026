@@ -16,7 +16,8 @@ MonoBehaviour:
   currentHP: 3
   speedNormal: 5
   speedAir: 2
-  speedDash: 10
+  dashForce: 7
+  dashCD: 1
   jumpForce: 7
   atkNormal: 2
   atkFireball: 4

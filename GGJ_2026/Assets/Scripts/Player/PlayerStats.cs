@@ -9,7 +9,8 @@ public class PlayerStats : ScriptableObject
     public int currentHP;
     public float speedNormal;
     public float speedAir;
-    public float speedDash;
+    public float dashForce;
+    public float dashCD;
     public float jumpForce;
     public int atkNormal;
     public int atkFireball;
