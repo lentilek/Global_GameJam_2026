@@ -232,9 +232,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1277855432}
   - component: {fileID: 1277855433}
+  - component: {fileID: 1277855436}
   - component: {fileID: 1277855434}
   - component: {fileID: 1277855435}
-  - component: {fileID: 1277855436}
+  - component: {fileID: 1277855437}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -319,13 +320,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dde09ebf5cf2ef4182d6db85163494f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  esm: {fileID: 0}
   player: {fileID: 78394240}
   patrolPoints:
   - {fileID: 614896245}
   - {fileID: 732310431}
-  maxHP: 3
-  currentHP: 3
-  attackDMG: 1
   patrolWaitTime: 2
   stopAtDistance: 0.5
   detectionRange: 5
@@ -356,6 +355,21 @@ CapsuleCollider:
   m_Height: 1.1
   m_Direction: 1
   m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!114 &1277855437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277855431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a25def3a7d0d4044b3575e7dc7c3681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 3
+  currentHP: 0
+  attackDMG: 2
 --- !u!1 &1314763659
 GameObject:
   m_ObjectHideFlags: 0

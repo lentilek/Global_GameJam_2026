@@ -27,7 +27,7 @@ public class PlayerMelee : MonoBehaviour
         if (other.gameObject.tag == "Enemy" && !onCD)
         {
             onCD = true;
-            other.gameObject.GetComponent<EnemyController>().currentHP -= PlayerControler.Instance.ps.atkNormal;
+            other.gameObject.GetComponent<EnemyStatManager>().currentHP -= PlayerControler.Instance.ps.atkNormal;
             PlayerControler.Instance.AttackCDStart();
         }
     }

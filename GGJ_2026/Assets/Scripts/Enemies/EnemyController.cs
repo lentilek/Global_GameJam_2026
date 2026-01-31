@@ -12,12 +12,11 @@ public enum EnemyState
 }
 public class EnemyController : MonoBehaviour
 {
+    [SerializeField] private EnemyStatManager esm;
+
     [SerializeField] private Transform player;
     [SerializeField] private Transform[] patrolPoints;
 
-    [SerializeField] private int maxHP;
-    public int currentHP;
-    [SerializeField] private int attackDMG;
     [SerializeField] private float patrolWaitTime;
     [SerializeField] private float stopAtDistance;
     [SerializeField] private float detectionRange = 5f;
@@ -36,6 +35,7 @@ public class EnemyController : MonoBehaviour
     private void Awake()
     {
         _agent = GetComponent<NavMeshAgent>();
+        esm = GetComponent<EnemyStatManager>();
         _attackCD = false;
     }
     private void Start()
@@ -94,7 +94,7 @@ public class EnemyController : MonoBehaviour
     }
     private void Attack()
     {
-        PlayerControler.Instance.ps.currentHP -= attackDMG;
+        PlayerControler.Instance.ps.currentHP -= esm.attackDMG;
         _agent.isStopped = true;
         var direction = (player.position - transform.position).normalized;
         direction.y = 0f;
