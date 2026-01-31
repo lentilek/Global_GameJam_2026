@@ -1060,22 +1060,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 403966826781140954, guid: a708244600d92f64fad46b3bc02bc06b, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 1780676611345835245, guid: a708244600d92f64fad46b3bc02bc06b, type: 3}
       propertyPath: playerSpawnPoint
       value: 
       objectReference: {fileID: 974861947}
-    - target: {fileID: 2937867583873556357, guid: a708244600d92f64fad46b3bc02bc06b, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3690044023096496346, guid: a708244600d92f64fad46b3bc02bc06b, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 4914606520324272234, guid: a708244600d92f64fad46b3bc02bc06b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1116,17 +1104,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5102766174884793339, guid: a708244600d92f64fad46b3bc02bc06b, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 6071270310547553281, guid: a708244600d92f64fad46b3bc02bc06b, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 6071270310547553281, guid: a708244600d92f64fad46b3bc02bc06b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
