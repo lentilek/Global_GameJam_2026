@@ -25,5 +25,11 @@ public class PlayerMelee : MonoBehaviour
             other.gameObject.GetComponentInParent<Destructable>().Destroy();
             PlayerControler.Instance.AttackCDStart();
         }
+        else if (other.gameObject.tag == "Ghost" && PlayerMasks.Instance.currentMask == Mask.Cementary && !onCD)
+        {
+            onCD = true;
+            other.gameObject.GetComponentInParent<Destructable>().Destroy();
+            PlayerControler.Instance.AttackCDStart();
+        }
     }
 }
