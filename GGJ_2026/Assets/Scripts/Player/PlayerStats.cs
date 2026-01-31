@@ -16,4 +16,8 @@ public class PlayerStats : ScriptableObject
     public float atkNormalCD;
     public int atkFireball;
     public float atkCD;
+
+    public bool forestUnlocked;
+    public bool cementaryUnlocked;
+    public bool circusUnlocked;
 }

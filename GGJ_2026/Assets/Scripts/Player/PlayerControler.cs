@@ -10,7 +10,6 @@ public class PlayerControler : MonoBehaviour
     public PlayerStats ps;
     private Rigidbody rb;
     [HideInInspector] public bool isOnGround;
-    public bool doubleJump, dash;
     private bool jumped, dashed;
     [HideInInspector] public bool onCD;
 
@@ -58,7 +57,7 @@ public class PlayerControler : MonoBehaviour
                 transform.position -= Vector3.right * ps.speedAir * Time.deltaTime;
             }
         }
-        if (doubleJump)
+        if (PlayerMasks.Instance.currentMask == Mask.Circus)
         {
             if (!isOnGround && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && !jumped)
             {
@@ -72,7 +71,7 @@ public class PlayerControler : MonoBehaviour
             jumped = false;
             rb.AddForce(new Vector3(0, ps.jumpForce, 0), ForceMode.Impulse);
         }
-        if (dash && Input.GetKeyDown(KeyCode.LeftShift) && !dashed)
+        if (PlayerMasks.Instance.currentMask == Mask.Forest && Input.GetKeyDown(KeyCode.LeftShift) && !dashed)
         {
             if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
             {

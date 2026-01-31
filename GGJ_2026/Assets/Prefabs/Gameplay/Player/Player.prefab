@@ -223,6 +223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98676af2557dac2468097dbc8800b78e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onCD: 0
 --- !u!1 &6071270310547553281
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,6 +235,7 @@ GameObject:
   - component: {fileID: 4914606520324272234}
   - component: {fileID: 3548996620557421634}
   - component: {fileID: 1780676611345835245}
+  - component: {fileID: 7436367500743485006}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -300,9 +302,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ps: {fileID: 11400000, guid: 4e556c29259c1f2498d1c4b4473578da, type: 2}
   isOnGround: 0
-  doubleJump: 0
-  dash: 0
   onCD: 0
+--- !u!114 &7436367500743485006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6071270310547553281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2da57158ba7b0c49aac07f461035aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ps: {fileID: 11400000, guid: 4e556c29259c1f2498d1c4b4473578da, type: 2}
+  currentMask: 0
 --- !u!1 &6211906263857915038
 GameObject:
   m_ObjectHideFlags: 0
