@@ -19,10 +19,10 @@ public class EnemyController : MonoBehaviour
 
     [SerializeField] private float patrolWaitTime;
     [SerializeField] private float stopAtDistance;
-    [SerializeField] private float detectionRange = 5f;
-    [SerializeField] private float viewAngle = 90f;
-    [SerializeField] private float losePlayerTime = 3f;
-    [SerializeField] private float attackRange = 1.2f;
+    [SerializeField] private float detectionRange;
+    [SerializeField] private float viewAngle;
+    [SerializeField] private float losePlayerTime;
+    [SerializeField] private float attackRange;
     [SerializeField] private float attackCD;
 
     private NavMeshAgent _agent;
@@ -44,8 +44,6 @@ public class EnemyController : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log(_state.ToString());
-
         var distanceToPlayer = Vector3.Distance(player.position, transform.position);
 
         switch (_state)
@@ -86,7 +84,6 @@ public class EnemyController : MonoBehaviour
                     _agent.isStopped = false;
                 }
                 break;
-
         }
     }
     private void StartAttack()

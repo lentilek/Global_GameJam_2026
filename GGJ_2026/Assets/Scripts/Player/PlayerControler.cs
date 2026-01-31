@@ -73,7 +73,8 @@ public class PlayerControler : MonoBehaviour
 
         if (PlayerMasks.Instance.currentMask == Mask.Circus)
         {
-            if (!isOnGround && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && !jumped)
+            if (!isOnGround && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) 
+                || Input.GetKeyDown(KeyCode.Space)) && !jumped)
             {
                 jumped = true;
                 rb.AddForce(new Vector3(0, ps.jumpForce, 0), ForceMode.Impulse);
@@ -98,7 +99,7 @@ public class PlayerControler : MonoBehaviour
                 StartCoroutine (Dash());
             }
         }
-        if (Input.GetKeyDown(KeyCode.Mouse0) && !onCD && isOnGround)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !onCD)// && isOnGround)
         {
             if (spriteCurrent.flipX)
             {
@@ -121,8 +122,14 @@ public class PlayerControler : MonoBehaviour
         else
         {
             animCurrent.SetBool("isRunning", false);
-            animCurrent.SetBool("isJumping", true);
-
+            if (!animCurrent.GetBool("isSlashing"))
+            {
+                animCurrent.SetBool("isJumping", true);
+            }
+            else
+            {
+                animCurrent.SetBool("isJumping", false);
+            }
         }
     }
     private void OnCollisionEnter(Collision collision)
@@ -150,7 +157,7 @@ public class PlayerControler : MonoBehaviour
         meleeLeft.gameObject.SetActive(false);
         meleeRight.gameObject.SetActive(false);
         animCurrent.SetBool("isSlashing", false);
-        yield return new WaitForSeconds(.3f);// ps.atkNormalCD);
+        yield return new WaitForSeconds(ps.atkNormalCD);
         onCD = false;
     }
     IEnumerator AttackCDNoEnemy()
@@ -164,7 +171,7 @@ public class PlayerControler : MonoBehaviour
             animCurrent.SetBool("isSlashing", false);
             meleeLeft.gameObject.SetActive(false);
             meleeRight.gameObject.SetActive(false);
-            yield return new WaitForSeconds(.3f);// ps.atkNormalCD);
+            yield return new WaitForSeconds(ps.atkNormalCD);
             onCD = false;
         }
     }
