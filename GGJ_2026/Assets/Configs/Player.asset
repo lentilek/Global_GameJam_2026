@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Player
   m_EditorClassIdentifier: 
   maxHP: 3
-  currentHP: 3
+  currentHP: -13
   speedNormal: 7
   speedAir: 3
   dashForce: 7
@@ -23,6 +23,6 @@ MonoBehaviour:
   atkNormalCD: 0.3
   atkFireball: 4
   atkCD: 6
-  forestUnlocked: 0
-  cementaryUnlocked: 0
-  circusUnlocked: 0
+  forestUnlocked: 1
+  cementaryUnlocked: 1
+  circusUnlocked: 1

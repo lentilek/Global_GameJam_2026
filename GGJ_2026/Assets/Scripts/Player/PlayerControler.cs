@@ -1,6 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerControler : MonoBehaviour
@@ -15,8 +13,8 @@ public class PlayerControler : MonoBehaviour
 
     [SerializeField] private PlayerMelee meleeLeft, meleeRight;
 
-    [SerializeField] private Animator animDefault, animCurrent;
-    [SerializeField] private SpriteRenderer spriteDefault, spriteCurrent;
+    public Animator animDefault, animForest, animCementary, animCircus, animCurrent;
+    public SpriteRenderer spriteDefault, spriteForest, spriteCementary, spriteCircus, spriteCurrent;
 
     private void Awake()
     {

@@ -13,7 +13,6 @@ public class PlayerMelee : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        Debug.Log("hit");
         if (other.gameObject.tag == "Enemy" && !onCD)
         {
             onCD = true;
