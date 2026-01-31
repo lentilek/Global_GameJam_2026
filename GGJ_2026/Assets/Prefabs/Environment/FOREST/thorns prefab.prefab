@@ -1,0 +1,1015 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1350447883237799499
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8963684639140971268}
+  m_Layer: 0
+  m_Name: thorns prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8963684639140971268
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350447883237799499}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 36.106354, y: 1.73, z: -0.2872331}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5575885178958483649}
+  - {fileID: 6487494241827263425}
+  - {fileID: 2157367489833859041}
+  - {fileID: 25527932739351199}
+  - {fileID: 4746095291885756139}
+  - {fileID: 2910376432695845024}
+  - {fileID: 7941121975066653308}
+  - {fileID: 2741850482926548342}
+  - {fileID: 3372072857110619161}
+  - {fileID: 5792120569904368780}
+  - {fileID: 9048305640290377350}
+  - {fileID: 3675445752466171323}
+  - {fileID: 8482683076399686596}
+  - {fileID: 8082751864271866935}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &271157213671064423
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8963684639140971268}
+    m_Modifications:
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.806221
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.08000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.4327669
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.15200262
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.98838013
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -162.514
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7352189035939635869, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_Name
+      value: DEATH THORNS (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+--- !u!4 &25527932739351199 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+  m_PrefabInstance: {fileID: 271157213671064423}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2191401186813576729
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8963684639140971268}
+    m_Modifications:
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5181
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.9436455
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.09000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.892767
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.34016648
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9403653
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -140.226
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7352189035939635869, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_Name
+      value: DEATH THORNS (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+--- !u!4 &2157367489833859041 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+  m_PrefabInstance: {fileID: 2191401186813576729}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2708048714193208462
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8963684639140971268}
+    m_Modifications:
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4302001
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4302
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.4302001
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.2499352
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.892767
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.82340634
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5674523
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -69.146
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7352189035939635869, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_Name
+      value: DEATH THORNS (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+--- !u!4 &2741850482926548342 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+  m_PrefabInstance: {fileID: 2708048714193208462}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3168935978398142808
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8963684639140971268}
+    m_Modifications:
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.2577477
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.08000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.31463277
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.9793217
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.20230915
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -383.344
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7352189035939635869, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_Name
+      value: DEATH THORNS (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+--- !u!4 &2910376432695845024 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+  m_PrefabInstance: {fileID: 3168935978398142808}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3266776504934192609
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8963684639140971268}
+    m_Modifications:
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4302
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0485368
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.4302
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.1536446
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.15999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.1929427
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.2953819
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.95537925
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -214.361
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7352189035939635869, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_Name
+      value: DEATH THORNS (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+--- !u!4 &3372072857110619161 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+  m_PrefabInstance: {fileID: 3266776504934192609}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3501592664289547331
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8963684639140971268}
+    m_Modifications:
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4302
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4302
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.4302
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.38364792
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.567233
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.77410614
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.6330558
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -281.448
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7352189035939635869, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_Name
+      value: DEATH THORNS (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+--- !u!4 &3675445752466171323 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+  m_PrefabInstance: {fileID: 3501592664289547331}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4775061404080172819
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8963684639140971268}
+    m_Modifications:
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4302
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4302
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.4302
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.3507233
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.1727669
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.052090496
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9986424
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -185.972
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7352189035939635869, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_Name
+      value: DEATH THORNS (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+--- !u!4 &4746095291885756139 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+  m_PrefabInstance: {fileID: 4775061404080172819}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5690420788043112761
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8963684639140971268}
+    m_Modifications:
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.1326256
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.08000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.3850289
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9641483
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.26536408
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 30.777
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7352189035939635869, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_Name
+      value: DEATH THORNS
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+--- !u!4 &5575885178958483649 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+  m_PrefabInstance: {fileID: 5690420788043112761}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6050682246451658100
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8963684639140971268}
+    m_Modifications:
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4302
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0485368
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.4302
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.4436455
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.15999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.037233
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.2953819
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.95537925
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -214.361
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7352189035939635869, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_Name
+      value: DEATH THORNS (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+--- !u!4 &5792120569904368780 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+  m_PrefabInstance: {fileID: 6050682246451658100}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6454181829302870585
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8963684639140971268}
+    m_Modifications:
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.016353607
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.08000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.1694388
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.762698
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.6467548
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -80.595
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7352189035939635869, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_Name
+      value: DEATH THORNS (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+--- !u!4 &6487494241827263425 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+  m_PrefabInstance: {fileID: 6454181829302870585}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7903080490104783748
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8963684639140971268}
+    m_Modifications:
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.556843
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.08000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.9268912
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.2280142
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.97365785
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -206.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7352189035939635869, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_Name
+      value: DEATH THORNS (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+--- !u!4 &7941121975066653308 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+  m_PrefabInstance: {fileID: 7903080490104783748}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8336825325626097103
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8963684639140971268}
+    m_Modifications:
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4301997
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4302
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.4301997
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.549561
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.8354536
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -113.326
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7352189035939635869, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_Name
+      value: DEATH THORNS (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+--- !u!4 &8082751864271866935 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+  m_PrefabInstance: {fileID: 8336825325626097103}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8512193454902874684
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8963684639140971268}
+    m_Modifications:
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4302
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4302
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.4302
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.7836456
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.58495605
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9540885
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.29952493
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 34.858
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7352189035939635869, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_Name
+      value: DEATH THORNS (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+--- !u!4 &8482683076399686596 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+  m_PrefabInstance: {fileID: 8512193454902874684}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9082603228008984446
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8963684639140971268}
+    m_Modifications:
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4302
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4302
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.4302
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.4401169
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.8427923
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.77410614
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.6330558
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -281.448
+      objectReference: {fileID: 0}
+    - target: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7352189035939635869, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+      propertyPath: m_Name
+      value: DEATH THORNS (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+--- !u!4 &9048305640290377350 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 259495230684885496, guid: 2a257a9d20fd74e4d81a2f6931f35f3f, type: 3}
+  m_PrefabInstance: {fileID: 9082603228008984446}
+  m_PrefabAsset: {fileID: 0}
