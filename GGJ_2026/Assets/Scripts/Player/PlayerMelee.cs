@@ -19,5 +19,11 @@ public class PlayerMelee : MonoBehaviour
             other.gameObject.GetComponent<EnemyStatManager>().currentHP -= PlayerControler.Instance.ps.atkNormal;
             PlayerControler.Instance.AttackCDStart();
         }
+        else if (other.gameObject.tag == "Destroy" && !onCD)
+        {
+            onCD = true;
+            other.gameObject.GetComponentInParent<Destructable>().Destroy();
+            PlayerControler.Instance.AttackCDStart();
+        }
     }
 }
