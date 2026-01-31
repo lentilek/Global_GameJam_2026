@@ -27,6 +27,10 @@ public class GameManager : MonoBehaviour
         {
             ResetPlayer();
         }
+        if (psPlayer.mask1 && psPlayer.mask2 && psPlayer.mask3)
+        {
+            // boss
+        }
     }
     public void ResetPlayer()
     {
