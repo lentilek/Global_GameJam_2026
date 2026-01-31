@@ -13,13 +13,15 @@ public class PlayerMelee : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Enemy" && !onCD)
+        if (other.gameObject.tag == "Enemy" && 
+            (PlayerMasks.Instance.currentMask == Mask.Forest || PlayerMasks.Instance.currentMask == Mask.None) && !onCD)
         {
             onCD = true;
             other.gameObject.GetComponent<EnemyStatManager>().currentHP -= PlayerControler.Instance.ps.atkNormal;
             PlayerControler.Instance.AttackCDStart();
         }
-        else if (other.gameObject.tag == "Destroy" && !onCD)
+        else if (other.gameObject.tag == "Destroy" &&
+            (PlayerMasks.Instance.currentMask == Mask.Forest || PlayerMasks.Instance.currentMask == Mask.None) && !onCD)
         {
             onCD = true;
             other.gameObject.GetComponentInParent<Destructable>().Destroy();
@@ -28,7 +30,7 @@ public class PlayerMelee : MonoBehaviour
         else if (other.gameObject.tag == "Ghost" && PlayerMasks.Instance.currentMask == Mask.Cementary && !onCD)
         {
             onCD = true;
-            other.gameObject.GetComponentInParent<Destructable>().Destroy();
+            other.gameObject.GetComponent<EnemyStatManager>().currentHP -= PlayerControler.Instance.ps.atkNormal;
             PlayerControler.Instance.AttackCDStart();
         }
     }

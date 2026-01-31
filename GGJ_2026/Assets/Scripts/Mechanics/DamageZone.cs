@@ -7,7 +7,7 @@ public class DamageZone : MonoBehaviour
     [SerializeField] private float damageCD;
     [SerializeField] private int damage;
 
-    private bool onCD;
+    [HideInInspector] public bool onCD;
 
     private void OnTriggerStay(Collider other)
     {
@@ -16,7 +16,10 @@ public class DamageZone : MonoBehaviour
             StartCoroutine(DamageCD());
         }
     }
-
+    public void StopAll()
+    {
+        StopAllCoroutines();
+    }
     IEnumerator DamageCD()
     {
         onCD = true;

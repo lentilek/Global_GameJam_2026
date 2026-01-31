@@ -14,7 +14,7 @@ public class EnemyStatManager : MonoBehaviour
     }
     private void Update()
     {
-        if (currentHP < 0)
+        if (currentHP <= 0)
         {
             Die();
         }
