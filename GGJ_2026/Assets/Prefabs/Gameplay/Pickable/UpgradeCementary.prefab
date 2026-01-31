@@ -94,9 +94,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8025826040441176579}
   - component: {fileID: 6079605748378267924}
-  - component: {fileID: 9176153775121880876}
+  - component: {fileID: 3240723471098344934}
   m_Layer: 0
-  m_Name: UpgradeForest
+  m_Name: UpgradeCementary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -139,7 +139,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &9176153775121880876
+--- !u!114 &3240723471098344934
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8255091277543574989}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ab80c38ffe446f4fb235f0227ffe3ad, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a44443f3d601e24a88e485aed66dfb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpAmount: 1
+  dmgAmount: 1
