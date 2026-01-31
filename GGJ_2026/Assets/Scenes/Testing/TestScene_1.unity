@@ -320,7 +320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dde09ebf5cf2ef4182d6db85163494f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  esm: {fileID: 0}
+  esm: {fileID: 1277855437}
   player: {fileID: 78394240}
   patrolPoints:
   - {fileID: 614896245}
@@ -329,7 +329,7 @@ MonoBehaviour:
   stopAtDistance: 0.5
   detectionRange: 5
   viewAngle: 90
-  losePlayerTime: 3
+  losePlayerTime: 2
   attackRange: 3
   attackCD: 2
 --- !u!136 &1277855436

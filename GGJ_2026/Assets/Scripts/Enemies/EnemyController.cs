@@ -44,6 +44,8 @@ public class EnemyController : MonoBehaviour
     }
     private void Update()
     {
+        Debug.Log(_state.ToString());
+
         var distanceToPlayer = Vector3.Distance(player.position, transform.position);
 
         switch (_state)
@@ -57,12 +59,12 @@ public class EnemyController : MonoBehaviour
                 break;
             case EnemyState.Following:
                 FollowPlayer();
-                if(distanceToPlayer <= attackRange && !_attackCD)
+                if(distanceToPlayer <= attackRange)
                 {
                     _state = EnemyState.Attacking;
                     StartAttack();
                 }
-                if (!CanSeePlayer())
+                if (!CanSeePlayer() || distanceToPlayer >= detectionRange * 2)
                 {
                     _timeSinceLostPlayer += Time.deltaTime;
                     if (_timeSinceLostPlayer >= losePlayerTime)
