@@ -5,7 +5,13 @@ using UnityEngine;
 public class DMGUpgrade : MonoBehaviour
 {
     [SerializeField] private int dmgAmount;
-
+    private void Start()
+    {
+        if (PlayerControler.Instance.ps.dmgUpgrade)
+        {
+            Destroy(gameObject);
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player" && !PlayerControler.Instance.ps.dmgUpgrade)

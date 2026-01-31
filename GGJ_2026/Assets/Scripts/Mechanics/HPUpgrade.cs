@@ -6,6 +6,13 @@ public class HPUpgrade : MonoBehaviour
 {
     [SerializeField] private int hpAmount;
 
+    private void Start()
+    {
+        if (PlayerControler.Instance.ps.hpUpgrade)
+        {
+            Destroy(gameObject);
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player" && !PlayerControler.Instance.ps.hpUpgrade)

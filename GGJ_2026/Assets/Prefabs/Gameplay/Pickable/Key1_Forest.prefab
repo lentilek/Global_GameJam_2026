@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keyNumber: 1
+  child: {fileID: 2813828392393922931}
 --- !u!135 &4456105996054785509
 SphereCollider:
   m_ObjectHideFlags: 0
