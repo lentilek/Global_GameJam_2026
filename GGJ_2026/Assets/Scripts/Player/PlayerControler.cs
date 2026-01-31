@@ -13,6 +13,7 @@ public class PlayerControler : MonoBehaviour
     [HideInInspector] public bool onCD;
 
     [SerializeField] private PlayerMelee meleeLeft, meleeRight;
+    [SerializeField] private GameObject dashLeft, dashRight;
 
     public Animator animDefault, animForest, animCementary, animCircus, animCurrent;
     public SpriteRenderer spriteDefault, spriteForest, spriteCementary, spriteCircus, spriteCurrent;
@@ -91,12 +92,14 @@ public class PlayerControler : MonoBehaviour
             if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
             {
                 rb.AddForce(new Vector3(ps.dashForce, 0, 0), ForceMode.Impulse);
+                dashRight.gameObject.SetActive(true);
                 StartCoroutine(Dash());
             }
             else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
             {
                 rb.AddForce(new Vector3(-ps.dashForce, 0, 0), ForceMode.Impulse);
-                StartCoroutine (Dash());
+                dashLeft.gameObject.SetActive(true);
+                StartCoroutine(Dash());
             }
         }
         if (Input.GetKeyDown(KeyCode.Mouse0) && !onCD)// && isOnGround)
@@ -143,7 +146,10 @@ public class PlayerControler : MonoBehaviour
     IEnumerator Dash()
     {
         dashed = true;
-        yield return new WaitForSeconds(ps.dashCD);
+        yield return new WaitForSeconds(.2f);
+        dashLeft.gameObject.SetActive(false);
+        dashRight.gameObject.SetActive(false);
+        yield return new WaitForSeconds(ps.dashCD-.2f);
         dashed = false;
     }
     public void AttackCDStart()
