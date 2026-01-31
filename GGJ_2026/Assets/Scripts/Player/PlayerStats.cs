@@ -20,4 +20,27 @@ public class PlayerStats : ScriptableObject
     public bool forestUnlocked;
     public bool cementaryUnlocked;
     public bool circusUnlocked;
+
+    public Mask currentMask;
+
+    public void SetUp(PlayerStats statsMain,PlayerStats statsNew)
+    {
+        statsNew.maxHP = statsMain.maxHP;
+        statsNew.currentHP = statsMain.currentHP;
+        statsNew.speedNormal = statsMain.speedNormal;
+        statsNew.speedAir = statsMain.speedAir;
+        statsNew.dashCD = statsMain.dashCD;
+        statsNew.dashCD = statsMain.dashCD;
+        statsNew.jumpForce = statsMain.jumpForce;
+        statsNew.atkNormal = statsMain.atkNormal;
+        statsNew.atkNormalCD = statsMain.atkNormalCD;
+        statsNew.atkFireball = statsMain.atkFireball;
+        statsNew.atkCD = statsMain.atkCD;
+
+        statsNew.forestUnlocked = statsMain.forestUnlocked;
+        statsNew.cementaryUnlocked = statsMain.cementaryUnlocked;
+        statsNew.circusUnlocked = statsMain.circusUnlocked;
+
+        statsNew.currentMask = statsMain.currentMask;
+    }
 }

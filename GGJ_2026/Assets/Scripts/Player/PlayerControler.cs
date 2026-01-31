@@ -6,6 +6,7 @@ public class PlayerControler : MonoBehaviour
     public static PlayerControler Instance;
 
     public PlayerStats ps;
+    public Transform playerSpawnPoint;
     private Rigidbody rb;
     [HideInInspector] public bool isOnGround;
     private bool jumped, dashed;
@@ -27,12 +28,11 @@ public class PlayerControler : MonoBehaviour
             Destroy(Instance.gameObject);
             Instance = this;
         }
-        spriteCurrent = spriteDefault;
-        animCurrent = animDefault;
     }
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        gameObject.transform.position = playerSpawnPoint.position;
         jumped = false;
         dashed = false;
         onCD = false;
