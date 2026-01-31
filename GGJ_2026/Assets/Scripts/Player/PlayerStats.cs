@@ -22,6 +22,7 @@ public class PlayerStats : ScriptableObject
     public bool circusUnlocked;
 
     public Mask currentMask;
+    public bool mask1, mask2, mask3;
 
     public void SetUp(PlayerStats statsMain,PlayerStats statsNew)
     {
@@ -42,5 +43,8 @@ public class PlayerStats : ScriptableObject
         statsNew.circusUnlocked = statsMain.circusUnlocked;
 
         statsNew.currentMask = statsMain.currentMask;
+        statsNew .mask1 = statsMain .mask1;
+        statsNew .mask2 = statsMain .mask2;
+        statsNew .mask3 = statsMain .mask3;
     }
 }
