@@ -13,6 +13,11 @@ public class PlayerControler : MonoBehaviour
     private bool jumped, dashed;
     [HideInInspector] public bool onCD;
 
+    [SerializeField] private PlayerMelee meleeLeft, meleeRight;
+
+    [SerializeField] private Animator animDefault, animCurrent;
+    [SerializeField] private SpriteRenderer spriteDefault, spriteCurrent;
+
     private void Awake()
     {
         if (Instance == null)
@@ -24,6 +29,8 @@ public class PlayerControler : MonoBehaviour
             Destroy(Instance.gameObject);
             Instance = this;
         }
+        spriteCurrent = spriteDefault;
+        animCurrent = animDefault;
     }
     void Start()
     {
@@ -40,23 +47,32 @@ public class PlayerControler : MonoBehaviour
             if (isOnGround)
             {
                 transform.position += Vector3.right * ps.speedNormal * Time.deltaTime;
+                if (!animCurrent.GetBool("isSlashing")) animCurrent.SetBool("isRunning", true);
             }
             else
             {
                 transform.position += Vector3.right * ps.speedAir * Time.deltaTime;
             }
+            spriteCurrent.flipX = false;
         }
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             if (isOnGround)
             {
                 transform.position -= Vector3.right * ps.speedNormal * Time.deltaTime;
+                if (!animCurrent.GetBool("isSlashing")) animCurrent.SetBool("isRunning", true);
             }
             else
             {
                 transform.position -= Vector3.right * ps.speedAir * Time.deltaTime;
             }
+            spriteCurrent.flipX = true;
         }
+        else
+        {
+            animCurrent.SetBool("isRunning", false);
+        }
+
         if (PlayerMasks.Instance.currentMask == Mask.Circus)
         {
             if (!isOnGround && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && !jumped)
@@ -84,11 +100,31 @@ public class PlayerControler : MonoBehaviour
                 StartCoroutine (Dash());
             }
         }
-        if (Input.GetKeyDown(KeyCode.Mouse0) && !onCD)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !onCD && isOnGround)
         {
-            PlayerMelee.Instance.gameObject.SetActive(true);
-            PlayerMelee.Instance.onCD = false;
+            if (spriteCurrent.flipX)
+            {
+                meleeLeft.gameObject.SetActive(true);
+                meleeLeft.onCD = false;
+            }
+            else
+            {
+                meleeRight.gameObject.SetActive(true);
+                meleeRight.onCD = false;
+            }
+            animCurrent.SetBool("isSlashing", true);
             StartCoroutine(AttackCDNoEnemy());
+        }
+
+        if (isOnGround)
+        {
+            animCurrent.SetBool("isJumping", false);
+        }
+        else
+        {
+            animCurrent.SetBool("isRunning", false);
+            animCurrent.SetBool("isJumping", true);
+
         }
     }
     private void OnCollisionEnter(Collision collision)
@@ -112,8 +148,10 @@ public class PlayerControler : MonoBehaviour
     IEnumerator AttackCD()
     {
         onCD = true;
-        yield return new WaitForSeconds(.1f);
-        PlayerMelee.Instance.gameObject.SetActive(false);
+        yield return new WaitForSeconds(.05f);
+        meleeLeft.gameObject.SetActive(false);
+        meleeRight.gameObject.SetActive(false);
+        animCurrent.SetBool("isSlashing", false);
         yield return new WaitForSeconds(.3f);// ps.atkNormalCD);
         onCD = false;
     }
@@ -124,8 +162,10 @@ public class PlayerControler : MonoBehaviour
         if (!onCD)
         {
             onCD = true;
-            yield return new WaitForSeconds(.1f);
-            PlayerMelee.Instance.gameObject.SetActive(false);
+            yield return new WaitForSeconds(.05f);
+            animCurrent.SetBool("isSlashing", false);
+            meleeLeft.gameObject.SetActive(false);
+            meleeRight.gameObject.SetActive(false);
             yield return new WaitForSeconds(.3f);// ps.atkNormalCD);
             onCD = false;
         }

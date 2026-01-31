@@ -20,5 +20,9 @@ MonoBehaviour:
   dashCD: 1
   jumpForce: 8
   atkNormal: 2
+  atkNormalCD: 0.3
   atkFireball: 4
   atkCD: 6
+  forestUnlocked: 0
+  cementaryUnlocked: 0
+  circusUnlocked: 0
