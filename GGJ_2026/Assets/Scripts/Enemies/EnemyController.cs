@@ -34,6 +34,7 @@ public class EnemyController : MonoBehaviour
 
     private void Awake()
     {
+        player = PlayerControler.Instance.transform;
         _agent = GetComponent<NavMeshAgent>();
         esm = GetComponent<EnemyStatManager>();
         _attackCD = false;
