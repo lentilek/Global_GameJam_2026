@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerControler : MonoBehaviour
@@ -11,6 +12,7 @@ public class PlayerControler : MonoBehaviour
     [HideInInspector] public bool isOnGround;
     public bool doubleJump, dash;
     private bool jumped, dashed;
+    [HideInInspector] public bool onCD;
 
     private void Awake()
     {
@@ -29,6 +31,7 @@ public class PlayerControler : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         jumped = false;
         dashed = false;
+        onCD = false;
     }
 
     void Update()
@@ -63,7 +66,7 @@ public class PlayerControler : MonoBehaviour
                 rb.AddForce(new Vector3(0, ps.jumpForce, 0), ForceMode.Impulse);
             }
         }
-        if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && isOnGround)
+        if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)) && isOnGround)
         {
             isOnGround = false;
             jumped = false;
@@ -82,6 +85,12 @@ public class PlayerControler : MonoBehaviour
                 StartCoroutine (Dash());
             }
         }
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !onCD)
+        {
+            PlayerMelee.Instance.gameObject.SetActive(true);
+            PlayerMelee.Instance.onCD = false;
+            StartCoroutine(AttackCDNoEnemy());
+        }
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -96,5 +105,30 @@ public class PlayerControler : MonoBehaviour
         dashed = true;
         yield return new WaitForSeconds(ps.dashCD);
         dashed = false;
+    }
+    public void AttackCDStart()
+    {
+        StartCoroutine(AttackCD());
+    }
+    IEnumerator AttackCD()
+    {
+        onCD = true;
+        yield return new WaitForSeconds(.1f);
+        PlayerMelee.Instance.gameObject.SetActive(false);
+        yield return new WaitForSeconds(.3f);// ps.atkNormalCD);
+        onCD = false;
+    }
+    IEnumerator AttackCDNoEnemy()
+    {
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame();
+        if (!onCD)
+        {
+            onCD = true;
+            yield return new WaitForSeconds(.1f);
+            PlayerMelee.Instance.gameObject.SetActive(false);
+            yield return new WaitForSeconds(.3f);// ps.atkNormalCD);
+            onCD = false;
+        }
     }
 }

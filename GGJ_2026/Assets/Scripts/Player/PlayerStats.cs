@@ -13,6 +13,7 @@ public class PlayerStats : ScriptableObject
     public float dashCD;
     public float jumpForce;
     public int atkNormal;
+    public float atkNormalCD;
     public int atkFireball;
     public float atkCD;
 }
