@@ -14,11 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 3
   currentHP: 3
-  speedNormal: 5
-  speedAir: 2
+  speedNormal: 7
+  speedAir: 3
   dashForce: 7
   dashCD: 1
-  jumpForce: 7
+  jumpForce: 8
   atkNormal: 2
+  atkNormalCD: 0.3
   atkFireball: 4
   atkCD: 6
+  forestUnlocked: 0
+  cementaryUnlocked: 0
+  circusUnlocked: 0
