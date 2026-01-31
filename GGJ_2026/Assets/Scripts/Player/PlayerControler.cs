@@ -4,12 +4,26 @@ using UnityEngine;
 
 public class PlayerControler : MonoBehaviour
 {
+    public static PlayerControler Instance;
+
     public PlayerStats ps;
     private Rigidbody rb;
     [HideInInspector] public bool isOnGround;
     public bool doubleJump, dash;
     private bool jumped, dashed;
 
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else if (Instance != this)
+        {
+            Destroy(Instance.gameObject);
+            Instance = this;
+        }
+    }
     void Start()
     {
         rb = GetComponent<Rigidbody>();

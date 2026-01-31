@@ -322,11 +322,16 @@ MonoBehaviour:
   patrolPoints:
   - {fileID: 614896245}
   - {fileID: 732310431}
+  maxHP: 3
+  currentHP: 3
+  attackDMG: 1
   patrolWaitTime: 2
   stopAtDistance: 0.5
   detectionRange: 5
   viewAngle: 90
   losePlayerTime: 3
+  attackRange: 1.2
+  attackCD: 2
 --- !u!1 &1314763659
 GameObject:
   m_ObjectHideFlags: 0
