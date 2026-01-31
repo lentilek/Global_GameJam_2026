@@ -27,3 +27,6 @@ MonoBehaviour:
   cementaryUnlocked: 0
   circusUnlocked: 0
   currentMask: 0
+  mask1: 0
+  mask2: 0
+  mask3: 0
