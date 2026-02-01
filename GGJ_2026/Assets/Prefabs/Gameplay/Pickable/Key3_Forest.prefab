@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: keyNumber
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7534718664120896505, guid: c397d24ac3e6c174a9c768e30c6c48b0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ddb71113e5447444da7ef5be3d983637, type: 3}
     - target: {fileID: 7891209298424716081, guid: c397d24ac3e6c174a9c768e30c6c48b0, type: 3}
       propertyPath: m_Name
       value: Key3_Forest

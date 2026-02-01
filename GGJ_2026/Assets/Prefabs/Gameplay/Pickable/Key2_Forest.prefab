@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Key2_Forest
       objectReference: {fileID: 0}
+    - target: {fileID: 1528338406041140154, guid: f0d660f1c495ba34c97ce6d640002d60, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8dafecf9c0530934699d0c16d646df19, type: 3}
     - target: {fileID: 6014145044033284970, guid: f0d660f1c495ba34c97ce6d640002d60, type: 3}
       propertyPath: keyNumber
       value: 2

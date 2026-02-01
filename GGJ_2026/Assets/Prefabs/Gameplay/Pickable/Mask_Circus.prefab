@@ -12,10 +12,22 @@ PrefabInstance:
       propertyPath: maskNumber
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1980455747256921351, guid: 8999581533c46b94ab79d0260fa62676, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3293610971400752707, guid: 8999581533c46b94ab79d0260fa62676, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 169df80f0b50e264b90ce4a1e54c7d83, type: 3}
+    - target: {fileID: 3748100639117507862, guid: 8999581533c46b94ab79d0260fa62676, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1.6729
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748100639117507862, guid: 8999581533c46b94ab79d0260fa62676, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.1635
+      objectReference: {fileID: 0}
     - target: {fileID: 5096850910489864204, guid: 8999581533c46b94ab79d0260fa62676, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -59,6 +71,10 @@ PrefabInstance:
     - target: {fileID: 8231359651340222683, guid: 8999581533c46b94ab79d0260fa62676, type: 3}
       propertyPath: m_Name
       value: Mask_Circus
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418153911992984701, guid: 8999581533c46b94ab79d0260fa62676, type: 3}
+      propertyPath: m_text
+      value: Shoot Fire, Double jump
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

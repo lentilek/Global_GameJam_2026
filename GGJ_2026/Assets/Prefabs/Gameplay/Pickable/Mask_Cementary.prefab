@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mask_Cementary
       objectReference: {fileID: 0}
+    - target: {fileID: 1707781349512186608, guid: 862e4e17b6206464fa2c01ba47bb3d09, type: 3}
+      propertyPath: m_text
+      value: "Pass through the vail, Soul Attack\r"
+      objectReference: {fileID: 0}
     - target: {fileID: 2727965939235669633, guid: 862e4e17b6206464fa2c01ba47bb3d09, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -67,6 +71,14 @@ PrefabInstance:
     - target: {fileID: 5680527650049089742, guid: 862e4e17b6206464fa2c01ba47bb3d09, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297129433532552091, guid: 862e4e17b6206464fa2c01ba47bb3d09, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1.2302
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297129433532552091, guid: 862e4e17b6206464fa2c01ba47bb3d09, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.3849
       objectReference: {fileID: 0}
     - target: {fileID: 7628497672044390467, guid: 862e4e17b6206464fa2c01ba47bb3d09, type: 3}
       propertyPath: maskNumber

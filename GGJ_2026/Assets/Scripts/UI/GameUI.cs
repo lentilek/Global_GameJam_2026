@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameUI : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class GameUI : MonoBehaviour
     public MaskUI maskForest, maskCementary, maskCircus;
 
     [SerializeField] private GameObject life1Broken, life2Broken, life3Broken, life4Broken, life4;
+
+    [SerializeField] private GameObject key1, key2, key3, keys, bossHP;
+    public Image fill1, fill2;
 
     private void Awake()
     {
@@ -26,6 +30,7 @@ public class GameUI : MonoBehaviour
     {
         UpdateHP();
         UpdateMasks();
+        UpdateKeys();
         maskForest.max = PlayerControler.Instance.ps.atkNormalCD;
         maskForest.fillcounter.SetActive(false);
         maskCementary.max = PlayerControler.Instance.ps.atkNormalCD;
@@ -37,6 +42,7 @@ public class GameUI : MonoBehaviour
     {
         UpdateHP();
         UpdateMasks();
+        UpdateKeys();
     }
     private void UpdateHP()
     {
@@ -143,5 +149,43 @@ public class GameUI : MonoBehaviour
                 maskCircus.number.SetActive(true);
             }
         }
+    }
+
+    private void UpdateKeys()
+    {
+        if (PlayerControler.Instance.ps.mask1)
+        {
+            key1.SetActive(true);
+        }
+        else
+        {
+            key1.SetActive(false);
+        }
+        if (PlayerControler.Instance.ps.mask2)
+        {
+            key2.SetActive(true);
+        }
+        else
+        {
+            key2.SetActive(false);
+        }
+        if (PlayerControler.Instance.ps.mask3)
+        {
+            key3.SetActive(true);
+        }
+        else
+        {
+            key3.SetActive(false);
+        }
+    }
+    public void BossStart()
+    {
+        keys.SetActive(false);
+        bossHP.SetActive(true);
+    }
+    public void GetCurrentFill(float amount, float max, Image filling)
+    {
+        float fill = amount / max;
+        filling.fillAmount = fill;
     }
 }

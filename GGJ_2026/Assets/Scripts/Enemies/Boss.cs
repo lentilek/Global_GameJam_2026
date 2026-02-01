@@ -49,6 +49,7 @@ public class Boss : MonoBehaviour
     }
     void Start()
     {
+        GameUI.Instance.BossStart();
         StartCoroutine(StartFight());
     }
     IEnumerator StartFight()
@@ -58,8 +59,9 @@ public class Boss : MonoBehaviour
     }
     private void Update()
     {
-        if(_esm.currentHP > 0)
+        if(_esm.currentHP > 50)
         {
+            GameUI.Instance.GetCurrentFill(_esm.currentHP - 50, 50, GameUI.Instance.fill1);
         }
         else
         {
