@@ -27,7 +27,7 @@ public class PlayerShooting : MonoBehaviour
     {
         if (canUShoot && Time.timeScale == 1)
         {
-            //AudioManager.Instance.PlaySound("shoot");
+            AudioManager.Instance.PlaySound("shoot");
             canUShoot = false;
             StartCoroutine(CantShoot());
             GameObject cb = Instantiate(bulletPrefab, transform.position, bulletPrefab.transform.rotation);

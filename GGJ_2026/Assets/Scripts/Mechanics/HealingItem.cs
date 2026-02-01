@@ -10,6 +10,7 @@ public class HealingItem : MonoBehaviour
     {
         if(other.gameObject.tag == "Player" && PlayerControler.Instance.ps.currentHP < PlayerControler.Instance.ps.maxHP)
         {
+            AudioManager.Instance.PlaySound("collect");
             PlayerControler.Instance.ps.currentHP += healAmount;
             Destroy(gameObject);
         }

@@ -60,7 +60,7 @@ public class AudioManager : MonoBehaviour
             case "dash":
                 audioSrc.PlayOneShot(dash);
                 break;
-            case "collect": // to do
+            case "collect": 
                 audioSrc.PlayOneShot(collect);
                 break;
             default:

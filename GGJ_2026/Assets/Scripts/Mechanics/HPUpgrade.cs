@@ -17,6 +17,7 @@ public class HPUpgrade : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && !PlayerControler.Instance.ps.hpUpgrade)
         {
+            AudioManager.Instance.PlaySound("collect");
             PlayerControler.Instance.ps.hpUpgrade = true;
             PlayerControler.Instance.ps.maxHP += hpAmount;
             PlayerControler.Instance.ps.currentHP += hpAmount;

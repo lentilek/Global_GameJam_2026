@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1562934661080661498
 Transform:
   m_ObjectHideFlags: 0
@@ -45,10 +45,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 598b51d76ae0531489dffb1994ffa470, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicMenu: {fileID: 0}
-  musicForest: {fileID: 0}
-  musicCementary: {fileID: 0}
-  musicTheatre: {fileID: 0}
+  musicMenu: {fileID: 8300000, guid: 454c9e2788399a34eb5ea42d46f1fa5d, type: 3}
+  musicForest: {fileID: 8300000, guid: 454c9e2788399a34eb5ea42d46f1fa5d, type: 3}
+  musicCementary: {fileID: 8300000, guid: 454c9e2788399a34eb5ea42d46f1fa5d, type: 3}
+  musicTheatre: {fileID: 8300000, guid: 106b3af0af5116147af85d7cde98b3db, type: 3}
   fadeTime: 1
   audioSrc: {fileID: 3124321893039120073}
 --- !u!82 &3124321893039120073

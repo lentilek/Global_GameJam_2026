@@ -16,6 +16,7 @@ public class DMGUpgrade : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && !PlayerControler.Instance.ps.dmgUpgrade)
         {
+            AudioManager.Instance.PlaySound("collect");
             PlayerControler.Instance.ps.dmgUpgrade = true;
             PlayerControler.Instance.ps.atkNormal += dmgAmount;
             PlayerControler.Instance.ps.atkFireball += dmgAmount;

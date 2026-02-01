@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7353676094757498813
 Transform:
   m_ObjectHideFlags: 0
@@ -142,14 +142,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSrc: {fileID: 0}
-  uiClick: {fileID: 0}
-  shoot: {fileID: 0}
-  hit: {fileID: 0}
-  hitGhost: {fileID: 0}
-  maskOn: {fileID: 0}
-  teleport: {fileID: 0}
-  damadge: {fileID: 0}
-  enemyDeath: {fileID: 0}
-  jump: {fileID: 0}
-  dash: {fileID: 0}
-  collect: {fileID: 0}
+  uiClick: {fileID: 8300000, guid: ac8ef8c7ac3c5a843825e8fdc08461fd, type: 3}
+  shoot: {fileID: 8300000, guid: 24b91ab565758144c85c3e8cd008daec, type: 3}
+  hit: {fileID: 8300000, guid: d6b8faf09aa0d3f40b9d507369c6146f, type: 3}
+  hitGhost: {fileID: 8300000, guid: b7a6aac171eda4d418a3430255f92451, type: 3}
+  maskOn: {fileID: 8300000, guid: 5caf55d33dd1aab4997bfde6000a12ec, type: 3}
+  teleport: {fileID: 8300000, guid: 5beac1d9cfd20cd4580966585dd96945, type: 3}
+  damadge: {fileID: 8300000, guid: 830242cd70d0ea34e9524fb5b10055bf, type: 3}
+  enemyDeath: {fileID: 8300000, guid: 09c1dca1728bade4aa3bf26c89b930dc, type: 3}
+  jump: {fileID: 8300000, guid: fed9e23f40a10034fbc4b1d8f18c5b76, type: 3}
+  dash: {fileID: 8300000, guid: 82d6d41a7be1de345955dcbcc4bb5718, type: 3}
+  collect: {fileID: 8300000, guid: 4e52f894439530246a8ba9ae2583c752, type: 3}

@@ -21,7 +21,7 @@ public class EnemyStatManager : MonoBehaviour
     }
     private void Die()
     {
-        //AudioManager.Instance.PlaySound("enemyDeath");
+        AudioManager.Instance.PlaySound("enemyDeath");
         Destroy(gameObject);
     }
     private void OnTriggerEnter(Collider other)

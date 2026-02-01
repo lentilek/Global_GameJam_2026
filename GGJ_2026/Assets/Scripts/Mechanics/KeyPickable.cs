@@ -63,6 +63,7 @@ public class KeyPickable : MonoBehaviour
                 default:
                     break;
             }
+            AudioManager.Instance.PlaySound("collect");
             Destroy(gameObject);
         }
     }

@@ -79,21 +79,21 @@ public class PlayerControler : MonoBehaviour
             if (!isOnGround && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) 
                 || Input.GetKeyDown(KeyCode.Space)) && !jumped)
             {
-                //AudioManager.Instance.PlaySound("jump");
+                AudioManager.Instance.PlaySound("jump");
                 jumped = true;
                 rb.AddForce(new Vector3(0, ps.jumpForce, 0), ForceMode.Impulse);
             }
         }
         if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)) && isOnGround)
         {
-            //AudioManager.Instance.PlaySound("jump");
+            AudioManager.Instance.PlaySound("jump");
             isOnGround = false;
             jumped = false;
             rb.AddForce(new Vector3(0, ps.jumpForce, 0), ForceMode.Impulse);
         }
         if (PlayerMasks.Instance.currentMask == Mask.Forest && Input.GetKeyDown(KeyCode.LeftShift) && !dashed)
         {
-            //AudioManager.Instance.PlaySound("dash");
+            AudioManager.Instance.PlaySound("dash");
             if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
             {
                 rb.AddForce(new Vector3(ps.dashForce, 0, 0), ForceMode.Impulse);
@@ -123,13 +123,13 @@ public class PlayerControler : MonoBehaviour
             animCurrent.SetBool("isSlashing", true);
             if(PlayerMasks.Instance.currentMask == Mask.Forest)
             {
-                //AudioManager.Instance.PlaySound("hit");
+                AudioManager.Instance.PlaySound("hit");
                 GameUI.Instance.maskForest.fillcounter.SetActive(true);
                 GameUI.Instance.maskForest.amount = GameUI.Instance.maskForest.max;
             }
             else if(PlayerMasks.Instance.currentMask == Mask.Cementary)
             {
-                //AudioManager.Instance.PlaySound("hitGhost");
+                AudioManager.Instance.PlaySound("hitGhost");
                 GameUI.Instance.maskCementary.fillcounter.SetActive(true);
                 GameUI.Instance.maskCementary.amount = GameUI.Instance.maskCementary.max;
             }
