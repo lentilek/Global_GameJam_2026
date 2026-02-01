@@ -23,7 +23,7 @@ public class PlayerShooting : MonoBehaviour
         canUShoot = true;
     }
 
-    public void Shoot(Transform transform)
+    public void Shoot(Transform transform, bool right)
     {
         if (canUShoot && Time.timeScale == 1)
         {
@@ -32,8 +32,8 @@ public class PlayerShooting : MonoBehaviour
             GameObject cb = Instantiate(bulletPrefab, transform.position, bulletPrefab.transform.rotation);
             Rigidbody rig = cb.GetComponent<Rigidbody>();
 
-            rig.AddForce(transform.right * PlayerControler.Instance.ps.bulletSpeed, ForceMode.VelocityChange);
-            //rig.AddForce(new Vector3(ps.dashForce, 0, 0), ForceMode.Impulse);
+            if (right) rig.AddForce(transform.right * PlayerControler.Instance.ps.bulletSpeed, ForceMode.VelocityChange);
+            else rig.AddForce(-transform.right * PlayerControler.Instance.ps.bulletSpeed, ForceMode.VelocityChange);
         }
     }
     IEnumerator CantShoot()

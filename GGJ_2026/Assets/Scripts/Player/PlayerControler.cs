@@ -131,13 +131,13 @@ public class PlayerControler : MonoBehaviour
             StartCoroutine(AttackCDNoEnemy());
         }else if(PlayerMasks.Instance.currentMask == Mask.Circus && Input.GetKeyDown(KeyCode.Mouse0))
         {
-            if (spriteCementary.flipX)
+            if (spriteCurrent.flipX)
             {
-                PlayerShooting.Instance.Shoot(fireLeft.transform);
+                PlayerShooting.Instance.Shoot(fireLeft.transform, false);
             }
             else
             {
-                PlayerShooting.Instance.Shoot(fireRight.transform);
+                PlayerShooting.Instance.Shoot(fireRight.transform, true);
             }
             GameUI.Instance.maskCircus.fillcounter.SetActive(true);
             GameUI.Instance.maskCircus.amount = GameUI.Instance.maskCircus.max;

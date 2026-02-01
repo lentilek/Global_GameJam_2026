@@ -121,7 +121,7 @@ public class GameUI : MonoBehaviour
             }
             else
             {
-                maskForest.active.SetActive(false);
+                maskCementary.active.SetActive(false);
                 maskCementary.number.SetActive(true);
             }
         }
@@ -139,7 +139,7 @@ public class GameUI : MonoBehaviour
             }
             else
             {
-                maskForest.active.SetActive(false);
+                maskCircus.active.SetActive(false);
                 maskCircus.number.SetActive(true);
             }
         }
