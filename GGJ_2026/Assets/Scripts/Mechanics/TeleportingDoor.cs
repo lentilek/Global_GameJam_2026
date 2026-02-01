@@ -11,6 +11,7 @@ public class TeleportingDoor : MonoBehaviour
     {
         if(other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.E))
         {
+            //AudioManager.Instance.PlaySound("teleport");
             PlayerControler.Instance.ps.currentMask = PlayerMasks.Instance.currentMask;
             SceneManager.LoadScene(teleportToIndex);
         }

@@ -39,18 +39,21 @@ public class PlayerMasks : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1) && ps.forestUnlocked)
         {
+            //AudioManager.Instance.PlaySound("maskOn");
             currentMask = Mask.Forest;
             SwitchMask();
             ChangePlayer();
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2) && ps.cementaryUnlocked)
         {
+            //AudioManager.Instance.PlaySound("maskOn");
             currentMask = Mask.Cementary;
             SwitchMask();
             ChangePlayer();
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3) && ps.circusUnlocked)
         {
+            //AudioManager.Instance.PlaySound("maskOn");
             currentMask = Mask.Circus;
             SwitchMask();
             ChangePlayer();

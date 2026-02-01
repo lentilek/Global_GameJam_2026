@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private PlayerStats psStart, psPlayer;
 
     [HideInInspector] public bool isPaused;
+    [HideInInspector] public int sceneIndex;
 
     private void Awake()
     {
@@ -22,6 +23,7 @@ public class GameManager : MonoBehaviour
         }
         isPaused = false;
         Time.timeScale = 1f;
+        sceneIndex = SceneManager.GetActiveScene().buildIndex;
     }
     private void Start()
     {
