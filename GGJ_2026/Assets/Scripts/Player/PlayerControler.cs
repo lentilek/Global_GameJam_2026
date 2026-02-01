@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerControler : MonoBehaviour
@@ -13,6 +14,7 @@ public class PlayerControler : MonoBehaviour
     [HideInInspector] public bool onCD;
 
     [SerializeField] private PlayerMelee meleeLeft, meleeRight;
+    [SerializeField] private GameObject fireLeft, fireRight;
     [SerializeField] private GameObject dashLeft, dashRight;
 
     public Animator animDefault, animForest, animCementary, animCircus, animCurrent;
@@ -127,6 +129,18 @@ public class PlayerControler : MonoBehaviour
                 GameUI.Instance.maskCementary.amount = GameUI.Instance.maskCementary.max;
             }
             StartCoroutine(AttackCDNoEnemy());
+        }else if(PlayerMasks.Instance.currentMask == Mask.Circus && Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            if (spriteCementary.flipX)
+            {
+                PlayerShooting.Instance.Shoot(fireLeft.transform);
+            }
+            else
+            {
+                PlayerShooting.Instance.Shoot(fireRight.transform);
+            }
+            GameUI.Instance.maskCircus.fillcounter.SetActive(true);
+            GameUI.Instance.maskCircus.amount = GameUI.Instance.maskCircus.max;
         }
 
         if (isOnGround)

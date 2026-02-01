@@ -16,6 +16,7 @@ public class PlayerStats : ScriptableObject
     public float atkNormalCD;
     public int atkFireball;
     public float atkCD;
+    public float bulletSpeed;
 
     public bool forestUnlocked;
     public bool cementaryUnlocked;
@@ -38,6 +39,7 @@ public class PlayerStats : ScriptableObject
         statsNew.atkNormalCD = statsMain.atkNormalCD;
         statsNew.atkFireball = statsMain.atkFireball;
         statsNew.atkCD = statsMain.atkCD;
+        statsNew.bulletSpeed = statsMain.bulletSpeed;
 
         statsNew.forestUnlocked = statsMain.forestUnlocked;
         statsNew.cementaryUnlocked = statsMain.cementaryUnlocked;

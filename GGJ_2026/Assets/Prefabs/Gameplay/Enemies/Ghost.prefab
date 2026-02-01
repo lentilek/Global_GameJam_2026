@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5628833856388784213}
   - component: {fileID: 1958957650748762840}
   - component: {fileID: 1568343105332394267}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GlobalDuch_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 3137185430743431866}
   - component: {fileID: 78926346071236222}
   - component: {fileID: 1422250021671083004}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ghost
   m_TagString: Ghost
   m_Icon: {fileID: 0}
@@ -266,7 +266,7 @@ GameObject:
   - component: {fileID: 4184470153693053655}
   - component: {fileID: 8731415294145562467}
   - component: {fileID: 6487155382438260510}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DamageZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}

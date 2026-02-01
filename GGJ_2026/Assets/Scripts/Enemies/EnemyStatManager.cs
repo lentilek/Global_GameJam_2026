@@ -23,4 +23,15 @@ public class EnemyStatManager : MonoBehaviour
     {
         Destroy(gameObject);
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Bullet")
+        {
+            if (gameObject.tag == "Enemy")
+            {
+                currentHP -= PlayerControler.Instance.ps.atkFireball;
+            }
+            Destroy(other.gameObject);
+        }
+    }
 }

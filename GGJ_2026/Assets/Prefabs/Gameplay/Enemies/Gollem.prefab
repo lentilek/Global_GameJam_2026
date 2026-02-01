@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8645218298258776884}
   - component: {fileID: 5330074475292165650}
   - component: {fileID: 8505782332489118785}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gollem
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -153,7 +153,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4258388736989632826}
   - component: {fileID: 6410374675484039181}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 8077967258753919634}
   - component: {fileID: 7449901476248357634}
   - component: {fileID: 8821845045425774449}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GlobalGolem_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,7 +313,7 @@ GameObject:
   - component: {fileID: 2251078964089109477}
   - component: {fileID: 7950603527421899729}
   - component: {fileID: 5600730654759087386}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DamageZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -349,6 +349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageCD: 2
   damage: 1
+  onCD: 0
 --- !u!65 &5600730654759087386
 BoxCollider:
   m_ObjectHideFlags: 0

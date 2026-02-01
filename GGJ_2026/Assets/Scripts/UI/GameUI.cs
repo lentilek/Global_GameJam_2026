@@ -27,8 +27,11 @@ public class GameUI : MonoBehaviour
         UpdateHP();
         UpdateMasks();
         maskForest.max = PlayerControler.Instance.ps.atkNormalCD;
+        maskForest.fillcounter.SetActive(false);
         maskCementary.max = PlayerControler.Instance.ps.atkNormalCD;
+        maskCementary.fillcounter.SetActive(false);
         maskCircus.max = PlayerControler.Instance.ps.atkCD;
+        maskCircus.fillcounter.SetActive(false);
     }
     private void Update()
     {
