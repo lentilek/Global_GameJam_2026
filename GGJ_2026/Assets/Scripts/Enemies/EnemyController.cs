@@ -1,33 +1,43 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
 
 public enum EnemyState
 {
     Patrolling,
-    Following
+    Following,
+    Attacking
 }
 public class EnemyController : MonoBehaviour
 {
+    [SerializeField] private EnemyStatManager esm;
+
     [SerializeField] private Transform player;
     [SerializeField] private Transform[] patrolPoints;
 
     [SerializeField] private float patrolWaitTime;
     [SerializeField] private float stopAtDistance;
-    [SerializeField] private float detectionRange = 5f;
-    [SerializeField] private float viewAngle = 90f;
-    [SerializeField] private float losePlayerTime = 3f;
+    [SerializeField] private float detectionRange;
+    [SerializeField] private float viewAngle;
+    [SerializeField] private float losePlayerTime;
+    [SerializeField] private float attackRange;
+    [SerializeField] private float attackCD;
 
     private NavMeshAgent _agent;
     private int _currentPatrolIndex;
     private bool _isWaiting;
     private EnemyState _state = EnemyState.Patrolling;
     private float _timeSinceLostPlayer;
+    private bool _isAttacking, _attackCD;
 
     private void Awake()
     {
+        player = PlayerControler.Instance.transform;
         _agent = GetComponent<NavMeshAgent>();
+        esm = GetComponent<EnemyStatManager>();
+        _attackCD = false;
     }
     private void Start()
     {
@@ -48,7 +58,12 @@ public class EnemyController : MonoBehaviour
                 break;
             case EnemyState.Following:
                 FollowPlayer();
-                if (!CanSeePlayer())
+                if(distanceToPlayer <= attackRange)
+                {
+                    _state = EnemyState.Attacking;
+                    StartAttack();
+                }
+                if (!CanSeePlayer() || distanceToPlayer >= detectionRange * 2)
                 {
                     _timeSinceLostPlayer += Time.deltaTime;
                     if (_timeSinceLostPlayer >= losePlayerTime)
@@ -62,7 +77,39 @@ public class EnemyController : MonoBehaviour
                     _timeSinceLostPlayer = 0f;
                 }
                     break;
+            case EnemyState.Attacking:
+                if (distanceToPlayer <= attackRange && !_attackCD) Attack();
+                if(!_isAttacking && distanceToPlayer > attackRange)
+                {
+                    _state = EnemyState.Following;
+                    _agent.isStopped = false;
+                }
+                break;
         }
+    }
+    private void StartAttack()
+    {
+        _agent.isStopped = true;
+        _isAttacking = true;
+    }
+    private void Attack()
+    {
+        PlayerControler.Instance.ps.currentHP -= esm.attackDMG;
+        _agent.isStopped = true;
+        var direction = (player.position - transform.position).normalized;
+        direction.y = 0f;
+        if(direction != Vector3.zero)
+        {
+            transform.rotation = Quaternion.LookRotation(direction);
+        }
+        StartCoroutine(AttackCD());
+    }
+    IEnumerator AttackCD()
+    {
+        _isAttacking = false;
+        _attackCD = true;
+        yield return new WaitForSeconds(attackCD);
+        _attackCD = false;
     }
     private void FollowPlayer()
     {

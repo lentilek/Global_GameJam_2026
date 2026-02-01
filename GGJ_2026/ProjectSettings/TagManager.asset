@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Enemy
+  - Destroy
+  - Ghost
   layers:
   - Default
   - TransparentFX
