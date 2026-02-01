@@ -11,7 +11,7 @@ public class PlayerControler : MonoBehaviour
     private Rigidbody rb;
     [HideInInspector] public bool isOnGround;
     private bool jumped, dashed;
-    [HideInInspector] public bool onCD;
+    [HideInInspector] public bool onCD, onCDFire;
 
     [SerializeField] private PlayerMelee meleeLeft, meleeRight;
     [SerializeField] private GameObject fireLeft, fireRight;
@@ -39,6 +39,7 @@ public class PlayerControler : MonoBehaviour
         jumped = false;
         dashed = false;
         onCD = false;
+        onCDFire = false;
     }
 
     void Update()
@@ -134,7 +135,7 @@ public class PlayerControler : MonoBehaviour
                 GameUI.Instance.maskCementary.amount = GameUI.Instance.maskCementary.max;
             }
             StartCoroutine(AttackCDNoEnemy());
-        }else if(PlayerMasks.Instance.currentMask == Mask.Circus && Input.GetKeyDown(KeyCode.Mouse0))
+        }else if(PlayerMasks.Instance.currentMask == Mask.Circus && Input.GetKeyDown(KeyCode.Mouse0) && !onCDFire)
         {
             if (spriteCurrent.flipX)
             {
@@ -144,6 +145,7 @@ public class PlayerControler : MonoBehaviour
             {
                 PlayerShooting.Instance.Shoot(fireRight.transform, true);
             }
+            onCDFire = true;
             GameUI.Instance.maskCircus.fillcounter.SetActive(true);
             GameUI.Instance.maskCircus.amount = GameUI.Instance.maskCircus.max;
         }

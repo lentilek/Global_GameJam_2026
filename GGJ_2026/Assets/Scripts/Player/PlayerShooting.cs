@@ -41,6 +41,7 @@ public class PlayerShooting : MonoBehaviour
     {
         yield return new WaitForSeconds(PlayerControler.Instance.ps.atkCD);
         canUShoot = true;
+        PlayerControler.Instance.onCDFire = false;
         GameUI.Instance.maskCircus.fillcounter.SetActive(false);
     }
 }
