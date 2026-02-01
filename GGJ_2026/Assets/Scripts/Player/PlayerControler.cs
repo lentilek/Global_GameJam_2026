@@ -173,6 +173,7 @@ public class PlayerControler : MonoBehaviour
         }
     }
 
+
     IEnumerator Dash()
     {
         dashed = true;

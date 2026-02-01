@@ -22,7 +22,7 @@ public class Boss : MonoBehaviour
     [SerializeField] private BoxCollider _collider;
 
     [SerializeField] private GameObject bulletPrefab, bulletspawn;
-    [SerializeField] private int shootDMG;
+    public int shootDMG;
     [SerializeField] private float shootCD, shootLength, bulletSpeed;
 
     [HideInInspector] public int lastAttackIndex;
