@@ -60,8 +60,4 @@ public class GameManager : MonoBehaviour
         psPlayer.currentMask = PlayerMasks.Instance.currentMask;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-    public void ChangeBiom()
-    {
-        // keep current mask
-    }
 }

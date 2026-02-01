@@ -23,6 +23,7 @@ MonoBehaviour:
   atkNormalCD: 0.3
   atkFireball: 4
   atkCD: 6
+  bulletSpeed: 18
   forestUnlocked: 0
   cementaryUnlocked: 0
   circusUnlocked: 0
@@ -30,3 +31,5 @@ MonoBehaviour:
   mask1: 0
   mask2: 0
   mask3: 0
+  hpUpgrade: 0
+  dmgUpgrade: 0
