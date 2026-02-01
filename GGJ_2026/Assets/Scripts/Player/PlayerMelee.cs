@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMelee : MonoBehaviour
@@ -30,7 +31,11 @@ public class PlayerMelee : MonoBehaviour
         else if (other.gameObject.tag == "Ghost" && PlayerMasks.Instance.currentMask == Mask.Cementary && !onCD)
         {
             onCD = true;
-            other.gameObject.GetComponent<EnemyStatManager>().currentHP -= PlayerControler.Instance.ps.atkNormal;
+            if(other.gameObject.GetComponent<EnemyStatManager>() != null) other.gameObject.GetComponent<EnemyStatManager>().currentHP -= PlayerControler.Instance.ps.atkNormal;
+            else if(other.gameObject.GetComponent<BossBullet>() != null)
+            {
+               Destroy(other.gameObject);
+            }
             PlayerControler.Instance.AttackCDStart();
         }
     }

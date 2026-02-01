@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6643698832386158480}
   - component: {fileID: 3169103131156910027}
   - component: {fileID: 1161596366210981185}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DashRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 6736125456178597931}
   - component: {fileID: 1658153469560153416}
   - component: {fileID: 1873340117227964277}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AnimForest
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -245,7 +245,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 446742477494426293}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ShootLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 3889401130985334356}
   - component: {fileID: 3212578345326077751}
   - component: {fileID: 1453329430602291005}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MeleeWeaponLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -372,7 +372,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1.3, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1453329430602291005
 MonoBehaviour:
@@ -399,7 +399,7 @@ GameObject:
   - component: {fileID: 1449468313072024049}
   - component: {fileID: 2698951842431417416}
   - component: {fileID: 6602026088166484057}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AnimDefault
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -527,7 +527,7 @@ GameObject:
   - component: {fileID: 7674028566962606919}
   - component: {fileID: 4092066549904546887}
   - component: {fileID: 2863100994974577460}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AnimCircus
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -657,7 +657,7 @@ GameObject:
   - component: {fileID: 1072229215294660326}
   - component: {fileID: 2415008127518113634}
   - component: {fileID: 5086414347465469180}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -763,7 +763,7 @@ GameObject:
   - component: {fileID: 262533746375918916}
   - component: {fileID: 6604155750606339921}
   - component: {fileID: 1302850937618100005}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MeleeWeaponRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -855,7 +855,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1.3, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1302850937618100005
 MonoBehaviour:
@@ -880,7 +880,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5551939931737560848}
   - component: {fileID: 7831302041590486967}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SliceLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -966,7 +966,7 @@ GameObject:
   - component: {fileID: 7708409949578376309}
   - component: {fileID: 6538268931016409344}
   - component: {fileID: 3736241881226465568}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AnimCementary
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1092,7 +1092,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2878745544735085464}
   - component: {fileID: 109804616568875825}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SliceRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1179,7 +1179,7 @@ GameObject:
   - component: {fileID: 1780676611345835245}
   - component: {fileID: 7436367500743485006}
   - component: {fileID: 4267473784220272978}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1306,7 +1306,7 @@ GameObject:
   - component: {fileID: 5311380799173645236}
   - component: {fileID: 6315782687773476378}
   - component: {fileID: 4079061699693795157}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -1396,7 +1396,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8715660382861761828}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ShootRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1429,7 +1429,7 @@ GameObject:
   - component: {fileID: 3403801066472993402}
   - component: {fileID: 4755556566255672739}
   - component: {fileID: 746474144759711060}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DashLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
