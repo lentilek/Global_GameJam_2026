@@ -7,22 +7,44 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private PlayerStats psStart, psPlayer;
 
+    [HideInInspector] public bool isPaused;
+
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(Instance);
-            return;
         }
-        Destroy(gameObject);
-
-        //psPlayer.SetUp(psStart, psPlayer);
-
+        else if (Instance != this)
+        {
+            Destroy(Instance.gameObject);
+            Instance = this;
+        }
+        isPaused = false;
+        Time.timeScale = 1f;
+    }
+    private void Start()
+    {
+        PauseUI.Instance.gameObject.SetActive(false);
         PlayerMasks.Instance.currentMask = psPlayer.currentMask;
     }
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(!isPaused)
+            {
+                Time.timeScale = 0;
+                isPaused = true;
+                PauseUI.Instance.gameObject.SetActive(true);
+            }
+            else
+            {
+                Time.timeScale = 1f;
+                isPaused = false;
+                PauseUI.Instance.gameObject.SetActive(false);
+            }
+        }
         if (psPlayer.currentHP <= 0)
         {
             ResetPlayer();
