@@ -17,7 +17,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Opera.unity
     guid: 09a5d7f3c7d981c4f966b5fab46df29d
-  - enabled: 1
-    path: Assets/Scenes/Testing/TestScene_1.unity
-    guid: f83b47f2fafc9644eb5f8e5609ff2ebb
   m_configObjects: {}

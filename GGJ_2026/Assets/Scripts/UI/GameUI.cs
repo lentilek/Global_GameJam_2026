@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameUI : MonoBehaviour
@@ -11,8 +12,10 @@ public class GameUI : MonoBehaviour
 
     [SerializeField] private GameObject life1Broken, life2Broken, life3Broken, life4Broken, life4;
 
-    [SerializeField] private GameObject key1, key2, key3, keys, bossHP;
+    [SerializeField] private GameObject key1, key2, key3, keys, bossHP, bossTXT;
     public Image fill1, fill2;
+
+    public GameObject endUI;
 
     private void Awake()
     {
@@ -37,12 +40,22 @@ public class GameUI : MonoBehaviour
         maskCementary.fillcounter.SetActive(false);
         maskCircus.max = PlayerControler.Instance.ps.atkCD;
         maskCircus.fillcounter.SetActive(false);
+        bossTXT.SetActive(false);
+        endUI.SetActive(false);
     }
     private void Update()
     {
         UpdateHP();
         UpdateMasks();
         UpdateKeys();
+        if(key1.activeSelf && key2.activeSelf && key3.activeSelf)
+        {
+            bossTXT.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                SceneManager.LoadScene(3);
+            }
+        }
     }
     private void UpdateHP()
     {

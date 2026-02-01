@@ -63,10 +63,14 @@ public class Boss : MonoBehaviour
         {
             GameUI.Instance.GetCurrentFill(_esm.currentHP - 50, 50, GameUI.Instance.fill1);
         }
+        else if(_esm.currentHP > 0)
+        {
+            GameUI.Instance.GetCurrentFill(_esm.currentHP, 50, GameUI.Instance.fill2);
+        }
         else
         {
             Time.timeScale = 0f;
-            //EndGame();
+            GameUI.Instance.endUI.SetActive(true);
         }
     }
     private void RandomAttack()
