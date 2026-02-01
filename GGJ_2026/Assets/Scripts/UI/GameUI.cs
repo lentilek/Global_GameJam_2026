@@ -48,7 +48,7 @@ public class GameUI : MonoBehaviour
         UpdateHP();
         UpdateMasks();
         UpdateKeys();
-        if(key1.activeSelf && key2.activeSelf && key3.activeSelf)
+        if(key1.activeSelf && key2.activeSelf && key3.activeSelf && SceneManager.GetActiveScene().buildIndex != 3)
         {
             bossTXT.SetActive(true);
             if (Input.GetKeyDown(KeyCode.P))

@@ -33,6 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1788967621394168205}
+  - {fileID: 8167197027183758502}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7204123984053454422
@@ -107,7 +108,6 @@ GameObject:
   - component: {fileID: 8167197027183758502}
   - component: {fileID: 5579596550433341221}
   - component: {fileID: 7366420925883512720}
-  - component: {fileID: 2391432896782445400}
   m_Layer: 7
   m_Name: Fire
   m_TagString: Untagged
@@ -125,10 +125,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.0027501676, y: 0.70710135, z: -0.7071015, w: 0.0027501676}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25000003, y: 0.24999999, z: 0.25}
+  m_LocalScale: {x: 0.100000024, y: 0.099999994, z: 0.10000002}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1788967621394168205}
+  m_Father: {fileID: 3875174182798741124}
   m_LocalEulerAnglesHint: {x: 90.445984, y: 269.998, z: 89.998}
 --- !u!33 &5579596550433341221
 MeshFilter:
@@ -180,28 +180,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2391432896782445400
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8427011781550491712}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &8915995105119733635
 GameObject:
   m_ObjectHideFlags: 0
@@ -219,7 +197,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1788967621394168205
 Transform:
   m_ObjectHideFlags: 0
@@ -232,8 +210,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 8167197027183758502}
+  m_Children: []
   m_Father: {fileID: 3875174182798741124}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7463038783173262805
