@@ -28,8 +28,8 @@ MonoBehaviour:
   cementaryUnlocked: 0
   circusUnlocked: 0
   currentMask: 0
-  mask1: 0
-  mask2: 0
-  mask3: 0
+  mask1: 1
+  mask2: 1
+  mask3: 1
   hpUpgrade: 0
   dmgUpgrade: 0
