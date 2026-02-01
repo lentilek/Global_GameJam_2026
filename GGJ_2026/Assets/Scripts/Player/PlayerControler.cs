@@ -102,7 +102,8 @@ public class PlayerControler : MonoBehaviour
                 StartCoroutine(Dash());
             }
         }
-        if (Input.GetKeyDown(KeyCode.Mouse0) && !onCD)// && isOnGround)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !onCD && 
+            (PlayerMasks.Instance.currentMask == Mask.Forest || PlayerMasks.Instance.currentMask == Mask.Cementary))// && isOnGround)
         {
             if (spriteCurrent.flipX)
             {
@@ -115,6 +116,16 @@ public class PlayerControler : MonoBehaviour
                 meleeRight.onCD = false;
             }
             animCurrent.SetBool("isSlashing", true);
+            if(PlayerMasks.Instance.currentMask == Mask.Forest)
+            {
+                GameUI.Instance.maskForest.fillcounter.SetActive(true);
+                GameUI.Instance.maskForest.amount = GameUI.Instance.maskForest.max;
+            }
+            else if(PlayerMasks.Instance.currentMask == Mask.Cementary)
+            {
+                GameUI.Instance.maskCementary.fillcounter.SetActive(true);
+                GameUI.Instance.maskCementary.amount = GameUI.Instance.maskCementary.max;
+            }
             StartCoroutine(AttackCDNoEnemy());
         }
 
@@ -163,6 +174,10 @@ public class PlayerControler : MonoBehaviour
         meleeLeft.gameObject.SetActive(false);
         meleeRight.gameObject.SetActive(false);
         animCurrent.SetBool("isSlashing", false);
+
+        GameUI.Instance.maskForest.fillcounter.SetActive(false);
+        GameUI.Instance.maskCementary.fillcounter.SetActive(false);
+
         yield return new WaitForSeconds(ps.atkNormalCD);
         onCD = false;
     }
@@ -175,6 +190,10 @@ public class PlayerControler : MonoBehaviour
             onCD = true;
             yield return new WaitForSeconds(.05f);
             animCurrent.SetBool("isSlashing", false);
+
+            GameUI.Instance.maskForest.fillcounter.SetActive(false);
+            GameUI.Instance.maskCementary.fillcounter.SetActive(false);
+
             meleeLeft.gameObject.SetActive(false);
             meleeRight.gameObject.SetActive(false);
             yield return new WaitForSeconds(ps.atkNormalCD);
