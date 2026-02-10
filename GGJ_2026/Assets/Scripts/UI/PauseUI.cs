@@ -23,6 +23,7 @@ public class PauseUI : MonoBehaviour
     {
         Time.timeScale = 1f;
         GameManager.Instance.isPaused = false;
+        Cursor.visible = false;
         gameObject.SetActive(false);
     }
     public void BackToMenu()

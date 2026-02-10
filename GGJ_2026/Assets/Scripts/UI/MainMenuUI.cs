@@ -10,10 +10,12 @@ public class MainMenuUI : MonoBehaviour
     private void Start()
     {
         psPlayer.SetUp(psStart, psPlayer);
+        Cursor.visible = true;
     }
 
     public void StartGame()
     {
+        Cursor.visible = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     public void QuitGame()

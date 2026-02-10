@@ -39,11 +39,13 @@ public class GameManager : MonoBehaviour
                 Time.timeScale = 0;
                 isPaused = true;
                 PauseUI.Instance.gameObject.SetActive(true);
+                Cursor.visible = true;
             }
             else
             {
                 Time.timeScale = 1f;
                 isPaused = false;
+                Cursor.visible = false;
                 PauseUI.Instance.gameObject.SetActive(false);
             }
         }
