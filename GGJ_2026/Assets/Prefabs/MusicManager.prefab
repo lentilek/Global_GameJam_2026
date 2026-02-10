@@ -49,7 +49,7 @@ MonoBehaviour:
   musicForest: {fileID: 8300000, guid: 454c9e2788399a34eb5ea42d46f1fa5d, type: 3}
   musicCementary: {fileID: 8300000, guid: 454c9e2788399a34eb5ea42d46f1fa5d, type: 3}
   musicTheatre: {fileID: 8300000, guid: 106b3af0af5116147af85d7cde98b3db, type: 3}
-  fadeTime: 1
+  fadeTime: 0.5
   audioSrc: {fileID: 3124321893039120073}
 --- !u!82 &3124321893039120073
 AudioSource:
@@ -61,11 +61,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 454c9e2788399a34eb5ea42d46f1fa5d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

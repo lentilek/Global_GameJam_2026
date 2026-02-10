@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1707781349512186608, guid: 862e4e17b6206464fa2c01ba47bb3d09, type: 3}
       propertyPath: m_text
-      value: "Pass through the vail, Soul Attack\r"
+      value: "Pass through the veil, Soul Attack\r"
       objectReference: {fileID: 0}
     - target: {fileID: 2727965939235669633, guid: 862e4e17b6206464fa2c01ba47bb3d09, type: 3}
       propertyPath: m_LocalPosition.x

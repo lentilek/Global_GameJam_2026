@@ -367,7 +367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6688839944409945231, guid: d7075f5a321a5ea49b2a16f4a4ac8ea3, type: 3}
       propertyPath: m_text
-      value: Manu
+      value: Menu
       objectReference: {fileID: 0}
     - target: {fileID: 7258235412904730890, guid: d7075f5a321a5ea49b2a16f4a4ac8ea3, type: 3}
       propertyPath: m_Name
